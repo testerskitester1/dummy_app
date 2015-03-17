@@ -10,7 +10,7 @@ gem 'mini_magick'
 gem 'carrierwave'
 gem 'dragonfly'
 group :production do
-  gem 'sqlite3'
+  gem 'pg'
 end
 group :development, :test do
   gem 'sqlite3'
