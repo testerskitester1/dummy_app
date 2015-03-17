@@ -17,8 +17,7 @@ test:
 
 production:
   adapter: postgresql
-  host: 127.0.0.1
-  username: root
-  password: password
+  username: <%= ENV['POSTGRESQL_USERNAME'] %>
+  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
   encoding: utf8
-  database: coincoin
+  database: <%= ENV['POSTGRESQL_DATABASE'] %>
